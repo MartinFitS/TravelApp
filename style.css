@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+::-webkit-scrollbar {display: none;}
+
+.menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.containerUp{
+    width: 100%;
+    height: 700px;
+    background-image: url("./img/playa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    width: 33%;
+    height: auto;
+    font-size: 17px;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.logo h1{
+    font-weight: 100;
+    color: rgb(38, 36, 35);
+}
+.temas{
+    margin-left: 10%;
+    width: 33%;
+    height: auto;
+}
+
+.temas ul{
+    display: flex;
+}
+
+.temas ul li {
+    margin-top: 6%;
+    font-size: 15px;
+    margin-left: 20px ;
+    list-style: none;
+    font-weight: 100;
+    color: rgb(82, 82, 80);
+}
+
+.redes{ 
+    width: 33%;
+    height: auto;
+}
+
+.redes ul{
+    display: flex;
+    float: right;
+    margin-right: 10%;
+    margin-top: 4%;
+}
+
+.redes ul li{
+    margin-top: 6%;
+    font-size: 20px;
+    margin-left: 20px ;
+    list-style: none;
+}
+
+.searcher{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.searcher h1{
+    margin-top: 50px;
+    padding: 5%;
+    font-weight: 100;
+    color: rgb(46, 43, 43);
+}
+
+.tatw{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.tatw h1{
+    font-weight: 100;
+    font-size: 40px;
+    color: rgb(46, 43, 43);
+}
+
+.middleContainer{
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.card{
+    display: flex;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.imgCard{
+    width: 100%;
+    height: 300px;
+}
+
+.imgCard img{
+    width: 100%;
+    height: 300px;
+}
+
+.imgCard img:hover{
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.infoCard h1{
+    padding-left: 10px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.infoCard p{
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: 100;
+    color: rgb(46, 43, 43);
+    padding-left: 10px;
+}
+
+.infoCard button{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid rgb(70, 162, 85);
+    color:rgb(70, 162, 85);
+}
+
+.infoCard button:hover{
+    cursor: pointer;
+    background-color: rgb(70, 162, 85);
+    color: white;
+    transition: 300ms;
+}
+
+.thirdContainer{
+    width: 100%;
+    height: 500px;
+}
+
+.tct{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tct h1{
+    font-weight: 100;
+    font-size: 40px;
+    color: rgb(46, 43, 43);
+}
+
+.galleryPhotos{
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+
+.galleryPhotos .img{
+    margin: 0 auto;
+    width: 350px;
+    height: 400px;
+}
+
+.img img{
+    width: 100%;
+    height: 500px;
+}
+
+footer
+{
+    background-color: #eeeeee;
+    margin-top:200px;
+    width:100%;
+    height:250px;
+}
+
+.h1Footer{
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-top: 15px;
+    color: rgb(46, 43, 43);
+}
+
+.h1Footer h1{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.pFooter{
+    width: 80%;
+    height: auto;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.pFooter p{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(46, 43, 43);
+    text-align: justify;
+}
+
+.divColumns{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 80%;
+    height: auto;
+    display: flex;
+}
+
+footer .column{
+    margin:0 auto;
+    width: 33%;
+    height: 88px;
+}
+
+.column h2{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.column li{
+    list-style: none;
+    font-weight: 100;
+    font-size: 14px;
+    color: rgb(46, 43, 43);
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+@media(max-width:1024px){
+    .containerUp {
+        height: 600px;
+    }
+}
+
+@media(max-width:768px){
+    footer {
+        height: 285px;
+    }
+    .img img {
+        height: 456px;
+    }
+    .card {
+        width: 70%;
+        height: 200px;
+    }
+    .imgCard {
+        height: 200px;
+    }
+    .imgCard img {
+        height: 200px;
+    }
+    .infoCard h1 {
+        font-size: 35px;
+    }
+    .infoCard p {
+        font-size: 14px;
+    }
+
+    .tatw h1 {
+        font-weight: 100;
+        font-size: 35px;
+    }
+    .tct h1 {
+        font-size: 35px;
+    }
+    .containerUp {
+        height: 548px;
+    }
+    .temas {
+        margin-left: 0%;
+    }
+}
+
+@media(max-width:600px){
+    .pFooter p {
+        font-size: 13px;
+        font-weight: 100;
+        color: rgb(46, 43, 43);
+        text-align: justify;
+    }
+    .h1Footer h1 {
+        margin-top: 10px;
+        font-size: 23px;
+        font-weight: 100;
+    }
+    .column h2 {
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .column li {
+        list-style: none;
+        font-weight: 100;
+        font-size: 11px;
+        color: rgb(46, 43, 43);
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .logo {
+        width: 27%;
+        height: auto;
+        font-size: 17px;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+}
+
+@media(max-width:540px){
+    .h1Footer h1 {
+        font-size: 25px;
+    }
+    .pFooter p {
+        font-size: 13px;
+    }
+    .column h2 {
+        font-size: 15px;
+    }
+    .column li {
+        font-size: 10px;
+    }
+    footer .column {
+        height: 76px;
+    }
+    .galleryPhotos {
+        display: block;
+        height: auto;
+    }
+    .img img {
+        height: 376px;
+    }
+    footer {
+        margin-top: 124px;
+    }
+    .thirdContainer {
+        height: auto;
+    }
+    .tct h1 {
+        font-size: 32px;
+    }
+    .searcher h1 {
+        font-size: 22px;
+    }
+
+    .logo {
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+    .temas {
+        margin-left: -3%;
+    }
+    .temas ul li {
+        margin-top: 9%;
+        font-size: 12px;
+        margin-left: 9px;
+    }
+    .redes ul {
+        margin-right: 8%;
+        margin-top: 4%;
+    }
+}
+
+@media(max-width:414px){
+    .pFooter {
+        width: 100%;
+        padding-top: 8px;
+    }
+    .pFooter p {
+        font-size: 12px;
+    }
+    .column h2 {
+        font-size: 12px;
+    }
+    footer {
+        margin-top: 95px;
+    }
+    .tct h1 {
+        font-size: 31px;
+    }
+    .infoCard p {
+        font-size: 11px;
+    }
+    .infoCard h1 {
+        font-size: 28px;
+    }
+    .infoCard button {
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 168px;
+        height: 25px;
+    }
+
+    .middleContainer {
+        width: 100%;
+        height: auto;
+        margin-bottom: 148px;
+    }
+
+    .infoCard{
+        width: 65%;
+    }
+    .tatw h1 {
+        font-weight: 100;
+        font-size: 29px;
+        color: rgb(46, 43, 43);
+    }
+    .tatw {
+        margin-bottom: 78px;
+    }
+    .containerUp {
+        height: 500px;
+    }
+    .searcher h1 {
+        font-size: 18px;
+    }
+    
+    .redes ul li {
+        width: 19px;
+        margin-top: 6%;
+        font-size: 15px;
+        margin-left: 20px;
+        list-style: none;
+    }
+    .redes ul {
+        margin-right: 3%;
+        margin-top: 4%;
+    }
+    .temas {
+        margin-left: 0%;
+        width: 35%;
+        height: auto;
+    }
+    .logo {
+        width: 27%;
+        height: auto;
+        font-size: 17px;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+}
+
+@media(max-width:411px){
+    .logo {
+        width: 24%;
+        height: auto;
+        font-size: 17px;
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+}
+
+@media(max-width:375px){
+    .containerUp {
+        height: 400px;
+    }
+    .searcher h1 {
+        font-size: 15px;
+    }
+    .logo {
+        width: 22%;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+    .logo h1 {
+        font-size: 23px;
+    }
+    .redes ul li {
+        width: 13px;
+        margin-top: 6%;
+        font-size: 15px;
+        margin-left: 20px;
+        list-style: none;
+    }
+    .redes {
+        width: 38%;
+        height: auto;
+    }
+    .temas ul li {
+        margin-top: 9%;
+        font-size: 9px;
+        margin-left: 26px;
+    }
+    .tatw h1 {
+        font-size: 22px;
+    }
+    .tatw {
+        margin-bottom: 54px;
+    }
+    .infoCard button {
+        margin-top: 15px;
+        height: 25px;
+    }
+    .tct h1 {
+        font-size: 22px;
+    }
+    .h1Footer h1 {
+        font-size: 22px;
+    }
+    .pFooter p {
+        font-size: 11px;
+    }
+}
+
+@media(max-width:360px){
+    .containerUp {
+        height: 350px;
+    }
+    .temas ul li {
+        margin-top: 9%;
+        font-size: 9px;
+        margin-left: 23px;
+    }
+    .redes {
+        width: 38%;
+    }
+    .redes ul li img{
+        width: 15px;
+        height: 15px;
+    }
+    .redes {
+        width: 42%;
+    }
+    .redes ul li {
+        width: 13px;
+        margin-top: 6%;
+        font-size: 15px;
+        margin-left: 16px;
+        list-style: none;
+    }
+}
+
+@media(max-width:320px){
+    .galleryPhotos .img {
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+    }
+    .logo {
+        width: 19%;
+    }
+    .logo h1 {
+        font-size: 21px;
+    }
+    .temas ul li {
+        margin-top: 9%;
+        font-size: 9px;
+        margin-left: 16px;
+    }
+    .redes ul li {
+        width: 10px;
+        margin-top: 6%;
+        font-size: 15px;
+        margin-left: 20px;
+        list-style: none;
+    }
+    .temas ul li {
+        margin-top: 9%;
+        font-size: 9px;
+        margin-left: 20px;
+    }
+    .searcher h1 {
+        font-size: 12px;
+    }
+    .containerUp {
+        height: 300px;
+    }
+    .infoCard h1 {
+        font-size: 24px;
+    }
+    .infoCard p {
+        font-size: 9px;
+    }
+    .infoCard button {
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 136px;
+        height: 25px;
+    }
+    footer {
+        height: 251px;
+    }
+    .pFooter p {
+        font-size: 8px;
+    }
+    .column h2 {
+        font-size: 9px;
+    }
+    .column li {
+        font-size: 8px;
+    }
+    .tatw h1 {
+        font-size: 19px;
+    }
+    .tct h1 {
+        font-size: 19px;
+    }
+
+    .redes ul li img{
+        width: 15px;
+        height: 15px;
+    }
+    .redes {
+        width: 42%;
+    }
+}
